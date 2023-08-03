@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eef2e9;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.navbar {
+  padding: 0;
+  height: 10%;
+  background-color: #57855e;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  padding: 8px 16px;
+  margin-left: 1em;
+}
+
+.navbar a {
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  margin-right: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*--------------------------------------------------------------
+# Section Title
+--------------------------------------------------------------*/
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  color: black;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------------
+# Card
+--------------------------------------------------------------*/
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card-text {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-about {
+  border-color: #989494;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  width: 50%;
+  height: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-about {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+  background-size: cover;
+}
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+  padding-top: 4em;
+  padding-bottom: 10px;
+  margin-bottom: 2em;
+  background-color: #b0c490;
+  min-height: 20px;
+}
+
+.breadcrumbs h2 {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Tour
+--------------------------------------------------------------*/
+
+#panorama {
+  width: 100%;
+  height: 100vh;
+}
+
+.tour-details {
+  color: black;
+  margin-bottom: 3em;
+}
+
+.tour-details .tour-details-slider img {
+  width: 100%;
+}
+
+.tour-details .tour-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(47, 77, 90, 0.08);
+}
+
+.tour-details .tour-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.tour-details .tour-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.tour-details .tour-info ul li + li {
+  margin-top: 10px;
+}
+
+.tour-details .tour-description {
+  padding-top: 20px;
+}
+
+.tour-details .tour-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tour-details .tour-description p {
+  padding: 0;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact {
+  padding-top: 5em; /* tambahan */
+  padding-bottom: 80px;
+  color: black;
+}
+
+.contact-card {
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 10px 20px -10px rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.contact .info i {
+  font-size: 30px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: #57855e;
+}
